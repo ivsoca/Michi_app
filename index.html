@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>MICHIES APP</title>
+</head>
+<body>
+    <h1>Michies random!</h1>
+
+    <span id="error"></span>
+
+    <section>
+
+        <article>
+            <img class="imagenes" id="image1">
+            <button id="btn1">Guardar michi en fav</button>
+        </article>
+
+        <article>
+            <img class="imagenes" id="image2">
+            <button id="btn2">Guardar michi en fav</button>
+        </article>
+
+        <button id="btn">Dame un animal</button>
+
+    </section>
+
+    <section id="favoritesMichis">
+        <article>
+            <img class="imagenes" id="imageF">
+            <br>
+            <button>Sacar michi de fav</button>
+        </article>
+    </section>
+   
+    <section id="uploadingMichi">
+        <h2>sube la foto de tu michi</h2>
+
+        <form id="uploadingform">
+            <input id="file" type="file" name="file"/>
+            <button type="button" onclick="uploadMichiPhoto">Subit foto de michi</button>
+        </form>
+    </section>
+
+</body>
+<script src="main.js"></script>
+</html>
