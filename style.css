@@ -1,9 +1,88 @@
+body{
+    background-color: #ffffff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(64, 64, 64);
+}
+
+a{
+    color: white;
+    
+}
 .imagenes{
     width: 20rem;
     height: 150px;
+    border-radius: 8px;
+}
+
+#section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .imagenes_load{
     width: 20rem;
     height: 150px;
 }
+
+.botonRandom{
+    border: none;
+    background-color: #0e0e0e;
+    border-radius:16px;
+    color: rgb(245, 228, 99);
+    font-weight: 700;
+    height: 40px;
+    margin: 10px;
+}
+.botonRandom:hover{
+    background-color: #6b6b6b;
+}
+
+.imagen-con-boton {
+    position: relative; /* Establece la posición relativa para el contenedor */
+    display: inline-block; /* Hace que el contenedor se comporte como un bloque en línea */
+}
+
+.imagen-con-boton2 {
+    position: relative; /* Establece la posición relativa para el contenedor */
+}
+
+.botonGuardado {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(38, 38, 49);
+}
+
+
+.botonGuardado:hover{
+    background-color: #F0FFF0;
+}
+
+/* .imagen-con-boton{
+    position: relative; 
+    display: inline-block;
+}
+.botonDelete{
+ color: #0e0e0e;
+ border: none;
+} */
+

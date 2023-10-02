@@ -7,43 +7,49 @@
     <title>MICHIES APP</title>
 </head>
 <body>
+    <div class="container">
     <h1>Michies random!</h1>
 
+    <!-- <a href="#section1">Random</a>
+    <a href="">Favoritos</a> -->
     <span id="error"></span>
 
-    <section>
-
+    <section id="section1">
+        <button id="btn" class="botonRandom">Give me a cat!</button>
         <article>
-            <img class="imagenes" id="image1">
-            <button id="btn1">Guardar michi en fav</button>
+            <div class="imagen-con-boton">
+                <img class="imagenes" id="image1">
+                <button id="btn1"  class="botonGuardado">+ Add favourites</button>
+            </div>  
         </article>
 
-        <article>
+        <!-- <article>
             <img class="imagenes" id="image2">
-            <button id="btn2">Guardar michi en fav</button>
+            <button id="btn2"  class="boton">Guardar michi en fav</button>
         </article>
+    </section> -->
 
-        <button id="btn">Dame un animal</button>
-
-    </section>
-
+    <div class="container">
     <section id="favoritesMichis">
         <article>
-            <img class="imagenes" id="imageF">
-            <br>
-            <button>Sacar michi de fav</button>
+            <div class="imagen-con-boton-f">
+                <img class="imagenes" id="imageF">
+                <button class="botonDelete">Sacar michi de fav</button>
+            </div>
         </article>
     </section>
-   
+</div>
+
     <section id="uploadingMichi">
         <h2>sube la foto de tu michi</h2>
 
         <form id="uploadingForm">
             <input id="file" type="file" name="file"/>
-            <button type="button" onclick="uploadMichiPhoto">Subit foto de michi</button>
+            <button type="button" onclick="uploadMichiPhoto()">Subit foto de michi</button>
         </form>
     </section>
-
+    </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
 </html>
