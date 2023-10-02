@@ -1,5 +1,11 @@
 body{
-    background-color: #ffffff;
+    background-color: #f6f6f6;
+    margin: 0;
+}
+
+:root {
+  --color-grey: rgb(64, 64, 64);
+  --font-familty:font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container{
@@ -9,19 +15,24 @@ body{
     flex-direction: column;
 }
 
+/* nav{
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    position: relative; 
+    top: 0; 
+    left: 0;
+    right: 0;
+} */
 
-h1{
+h1,h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(64, 64, 64);
+    color:var(--color-grey)
 }
 
-a{
-    color: white;
-    
-}
 .imagenes{
-    width: 20rem;
-    height: 150px;
+    width: 30rem;
+    height: 250px;
     border-radius: 8px;
 }
 
@@ -32,6 +43,8 @@ a{
     flex-direction: column;
 }
 
+
+
 .imagenes_load{
     width: 20rem;
     height: 150px;
@@ -39,9 +52,9 @@ a{
 
 .botonRandom{
     border: none;
-    background-color: #0e0e0e;
+    background-color: #303030;
     border-radius:16px;
-    color: rgb(245, 228, 99);
+    color: rgb(255, 241, 133);
     font-weight: 700;
     height: 40px;
     margin: 10px;
@@ -51,31 +64,84 @@ a{
 }
 
 .imagen-con-boton {
-    position: relative; /* Establece la posición relativa para el contenedor */
-    display: inline-block; /* Hace que el contenedor se comporte como un bloque en línea */
+    position: relative; 
+    display: inline-block; 
+    padding: 20px;
 }
 
-.imagen-con-boton2 {
-    position: relative; /* Establece la posición relativa para el contenedor */
+.imagen-con-boton-eliminar {
+    position: relative;   
 }
 
-.botonGuardado {
+.botonGuardado{
     position: absolute; 
-    bottom: 10px; 
-    right: 10px;
+    bottom: 30px; 
+    right: 25px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: aliceblue;
     border-radius: 5px;
     height: 20px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: rgb(38, 38, 49);
+    color: rgb(0, 0, 0);
 }
 
-
-.botonGuardado:hover{
-    background-color: #F0FFF0;
+.botonDelete {
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px;
+    border: none;
+    background-color: #ff0800;
+    border-radius: 5px;
+    height: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
 }
+
+.botonDelete:hover{
+    background-color: #e15151;
+
+}
+
+.botonDelete:active{
+    background-color: #fce8e8;
+
+}
+
+#favoritesMichis{
+    width: 330px; 
+    height: 500px; 
+    overflow-x: auto; 
+    padding: 10px; 
+    /* border: 1px solid #ccc; */
+}
+
+#uploadingMichi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.files{
+    width: 35px;
+    position: relative;
+    left: 10px;
+}
+
+.upload-btn{
+    background: none;
+}
+
+.upload-btn:active{
+    background-color: var(--color-grey);
+}
+
 
 /* .imagen-con-boton{
     position: relative; 

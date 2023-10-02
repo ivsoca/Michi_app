@@ -65,19 +65,18 @@ async function loadRandomMichies(){
             const section = document.getElementById('favoritesMichis');
             section.innerHTML = "";
             const h2 = document.createElement('h2');
-            const h2Text = document.createTextNode('Michis favoritos');
-            h2.appendChild(h2Text);
+            // const h2Text = document.createTextNode('Michis favoritos');
+            // h2.appendChild(h2Text);
             section.appendChild(h2);
 
             data.forEach(michi =>{
                 const article = document.createElement('article');
-                article.classList.add('imagen-con-boton2')
+                article.classList.add('imagen-con-boton-eliminar')
                 const img = document.createElement('img');
                 img.classList.add('imagenes_load')
                 const btn = document.createElement('button');
-                const btnText = document.createTextNode('Sacar al michi de favoritos');
-                btn.classList.add('botonGuardado');
-
+                const btnText = document.createTextNode('Delete');
+                btn.classList.add('botonDelete');
 
                 img.src = michi.image.url
                 btn.appendChild(btnText);

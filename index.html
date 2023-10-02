@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-    <h1>Michies random!</h1>
-
-    <!-- <a href="#section1">Random</a>
-    <a href="">Favoritos</a> -->
+        <nav></nav>
+        <h1 class="h1">Michies random!</h1>
+    
+     <!-- <a href="#section1">Random</a> -->
+    <!-- <a href="./favoritos.html">Favoritos</a>  -->
     <span id="error"></span>
 
+    <!-- Michi random y agregar a  favoritos -->
     <section id="section1">
         <button id="btn" class="botonRandom">Give me a cat!</button>
         <article>
@@ -23,31 +25,39 @@
             </div>  
         </article>
 
-        <!-- <article>
+
+        <!-- subir la foto de michis -->
+        <section id="uploadingMichi">
+            <h2>Sube la foto de tu michi</h2> 
+            <form id="uploadingForm">
+                <!-- <input id="file" type="file" name="file"/> -->
+                <label for="file" class="custom-file-upload">
+                    <img src="./assets/files.png" alt="Subir archivo" class="files"  title="Carga tu michi!">
+                  </label>
+                  <input id="file" type="file" name="file" style="display: none;">             
+                  <br>  
+                <button type="button" onclick="uploadMichiPhoto()" class="upload-btn">Subir</button>
+            </form>
+        </section>
+
+
+         <!-- <article>
             <img class="imagenes" id="image2">
             <button id="btn2"  class="boton">Guardar michi en fav</button>
-        </article>
-    </section> -->
-
-    <div class="container">
+        </article> -->
+    </section> 
+    <h2>Michis favoritos</h2>
+    <div class="container-favourites">
     <section id="favoritesMichis">
-        <article>
+        <!-- <article>
             <div class="imagen-con-boton-f">
                 <img class="imagenes" id="imageF">
-                <button class="botonDelete">Sacar michi de fav</button>
             </div>
-        </article>
+        </article> -->
     </section>
 </div>
 
-    <section id="uploadingMichi">
-        <h2>sube la foto de tu michi</h2>
-
-        <form id="uploadingForm">
-            <input id="file" type="file" name="file"/>
-            <button type="button" onclick="uploadMichiPhoto()">Subit foto de michi</button>
-        </form>
-    </section>
+   
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
