@@ -39,7 +39,7 @@ async function loadRandomMichies(){
             // img2.src = data[1].url;
 
             btn1.onclick = () =>saveFavouriteMichi(data[0].id);
-            btn2.onclick = ()=>saveFavouriteMichi(data[1].id);
+            // btn2.onclick = ()=>saveFavouriteMichi(data[1].id);
 
         }
     }
